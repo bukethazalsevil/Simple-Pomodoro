@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-AJ-PRe">
+                                <rect key="frame" x="0.0" y="10" width="393" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="wGd-7l-BD9">
+                                        <rect key="frame" x="97.666666666666686" y="0.0" width="198" height="150.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="47" translatesAutoresizingMaskIntoConstraints="NO" id="kXI-hi-vyl">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="150.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="7Hm-h5-cEX">
+                                                <rect key="frame" x="59.333333333333336" y="0.0" width="79.333333333333314" height="150.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="47" translatesAutoresizingMaskIntoConstraints="NO" id="S1Y-iw-7Re">
+                                                <rect key="frame" x="118.66666666666669" y="0.0" width="79.333333333333314" height="150.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-Qw-hSR">
+                                        <rect key="frame" x="92.000000000000014" y="219.33333333333331" width="209.33333333333337" height="150.33333333333331"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="v1X-Au-Dbx">
+                                        <rect key="frame" x="67.333333333333343" y="438.66666666666674" width="258.66666666666663" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuD-2z-HNS">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="150"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Start" cornerStyle="small">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                    <color key="baseForegroundColor" red="0.87450980392156863" green="0.84705882352941175" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.32156862745098036" green="0.3411764705882353" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRw-JJ-lPI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-rq-rlb">
+                                                <rect key="frame" x="169.33333333333331" y="0.0" width="89.333333333333314" height="150"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Pause" cornerStyle="small">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                    <color key="baseForegroundColor" red="0.87450980392156863" green="0.84705882352941175" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.32156862745098036" green="0.3411764705882353" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kg0-em-9gw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-bf-AFC">
+                                        <rect key="frame" x="145.66666666666666" y="657.66666666666663" width="101.66666666666666" height="150.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Restart" cornerStyle="small">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                            <color key="baseForegroundColor" red="0.87450980392156863" green="0.84705882352941175" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.32156862745098036" green="0.3411764705882353" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="restartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HO4-ix-l5l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.74901960784313726" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8ku-AJ-PRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4IR-t5-R0r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8ku-AJ-PRe" secondAttribute="bottom" id="ick-Qi-1a1"/>
+                            <constraint firstItem="8ku-AJ-PRe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="q90-Ki-kXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ku-AJ-PRe" secondAttribute="trailing" id="yfq-IS-E6z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breakLabel" destination="OY2-Qw-hSR" id="2eC-3G-Ugk"/>
+                        <outlet property="minuteLabel" destination="kXI-hi-vyl" id="M47-rC-XST"/>
+                        <outlet property="secondsLabel" destination="S1Y-iw-7Re" id="JDA-hG-lQu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>
